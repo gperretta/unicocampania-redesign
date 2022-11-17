@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5073632926D0D800151323 /* CardBuyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073622926D0D800151323 /* CardBuyTicketView.swift */; };
+		3A5073652926D0E800151323 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073642926D0E800151323 /* CreditCardView.swift */; };
+		3A5073672926D17000151323 /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073662926D17000151323 /* MyTicketsView.swift */; };
 		3A59652F292646BB00901C8E /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59652E292646BB00901C8E /* TicketsView.swift */; };
 		3A596531292646C700901C8E /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596530292646C700901C8E /* ParkingView.swift */; };
 		3A596535292646F400901C8E /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596534292646F400901C8E /* SharingView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A5073622926D0D800151323 /* CardBuyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBuyTicketView.swift; sourceTree = "<group>"; };
+		3A5073642926D0E800151323 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		3A5073662926D17000151323 /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
 		3A59652E292646BB00901C8E /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
 		3A596530292646C700901C8E /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
 		3A596534292646F400901C8E /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
@@ -52,6 +58,9 @@
 				3A59652E292646BB00901C8E /* TicketsView.swift */,
 				3A596530292646C700901C8E /* ParkingView.swift */,
 				3A596534292646F400901C8E /* SharingView.swift */,
+				3A5073622926D0D800151323 /* CardBuyTicketView.swift */,
+				3A5073642926D0E800151323 /* CreditCardView.swift */,
+				3A5073662926D17000151323 /* MyTicketsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,10 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
+				3A5073632926D0D800151323 /* CardBuyTicketView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
 				3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */,
 				3A596535292646F400901C8E /* SharingView.swift in Sources */,
 				3A596531292646C700901C8E /* ParkingView.swift in Sources */,
+				3A5073672926D17000151323 /* MyTicketsView.swift in Sources */,
+				3A5073652926D0E800151323 /* CreditCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

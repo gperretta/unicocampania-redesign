@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct TicketsView: View {
+    
+    let tabName = "Tickets"
+    let iconName = "user"
+    
     var body: some View {
-        Text("TICKETS VIEW")
+        NavigationView {
+            ScrollView {
+                VStack{
+                    MyTicketsView()
+                        .padding(.bottom, 8)
+                    VStack(alignment: .center) {
+                        CardBuyTicketView()
+                        CreditCardView()
+                    }
+                    .padding(.horizontal)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text(tabName)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image(iconName)
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }
+            }
+        }
     }
 }
 
