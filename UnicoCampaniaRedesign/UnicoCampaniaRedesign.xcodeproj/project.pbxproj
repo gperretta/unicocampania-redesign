@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A59652F292646BB00901C8E /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59652E292646BB00901C8E /* TicketsView.swift */; };
+		3A596531292646C700901C8E /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596530292646C700901C8E /* ParkingView.swift */; };
+		3A596535292646F400901C8E /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596534292646F400901C8E /* SharingView.swift */; };
 		3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */; };
 		3AB97DEA292563C0008E815E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE9292563C0008E815E /* ContentView.swift */; };
 		3AB97DEC292563C1008E815E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB97DEB292563C1008E815E /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A59652E292646BB00901C8E /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
+		3A596530292646C700901C8E /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
+		3A596534292646F400901C8E /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
 		3AB97DE4292563C0008E815E /* UnicoCampaniaRedesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicoCampaniaRedesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicoCampaniaRedesignApp.swift; sourceTree = "<group>"; };
 		3AB97DE9292563C0008E815E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A59652C2926469000901C8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A59652D2926469600901C8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AB97DE9292563C0008E815E /* ContentView.swift */,
+				3A59652E292646BB00901C8E /* TicketsView.swift */,
+				3A596530292646C700901C8E /* ParkingView.swift */,
+				3A596534292646F400901C8E /* SharingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3AB97DDB292563C0008E815E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +75,9 @@
 		3AB97DE6292563C0008E815E /* UnicoCampaniaRedesign */ = {
 			isa = PBXGroup;
 			children = (
+				3A59652D2926469600901C8E /* View */,
+				3A59652C2926469000901C8E /* Model */,
 				3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */,
-				3AB97DE9292563C0008E815E /* ContentView.swift */,
 				3AB97DEB292563C1008E815E /* Assets.xcassets */,
 				3AB97DED292563C1008E815E /* Preview Content */,
 			);
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
 				3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */,
+				3A596535292646F400901C8E /* SharingView.swift in Sources */,
+				3A596531292646C700901C8E /* ParkingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
