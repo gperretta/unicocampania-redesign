@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3A1AD7B3292931A6004F1C66 /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7B2292931A6004F1C66 /* ParkingView.swift */; };
+		3A1AD7B729293A28004F1C66 /* TicketItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7B629293A28004F1C66 /* TicketItemView.swift */; };
+		3A1AD7B929293F1D004F1C66 /* TicketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7B829293F1D004F1C66 /* TicketData.swift */; };
+		3A1AD7BB29293F28004F1C66 /* TicketModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7BA29293F28004F1C66 /* TicketModeling.swift */; };
+		3A1AD7BD29294503004F1C66 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7BC29294503004F1C66 /* SheetView.swift */; };
+		3A1AD7C129295B28004F1C66 /* CodeGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7C029295B28004F1C66 /* CodeGeneratorView.swift */; };
 		3A37616F2928F652007663ED /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37616E2928F652007663ED /* TableData.swift */; };
 		3A3761712928F664007663ED /* TableModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3761702928F664007663ED /* TableModeling.swift */; };
 		3A3761732928FA6D007663ED /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3761722928FA6D007663ED /* TableRowView.swift */; };
@@ -22,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		3A1AD7B2292931A6004F1C66 /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
+		3A1AD7B629293A28004F1C66 /* TicketItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketItemView.swift; sourceTree = "<group>"; };
+		3A1AD7B829293F1D004F1C66 /* TicketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketData.swift; sourceTree = "<group>"; };
+		3A1AD7BA29293F28004F1C66 /* TicketModeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModeling.swift; sourceTree = "<group>"; };
+		3A1AD7BC29294503004F1C66 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		3A1AD7C029295B28004F1C66 /* CodeGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGeneratorView.swift; sourceTree = "<group>"; };
 		3A37616E2928F652007663ED /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
 		3A3761702928F664007663ED /* TableModeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModeling.swift; sourceTree = "<group>"; };
 		3A3761722928FA6D007663ED /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 			children = (
 				3A37616E2928F652007663ED /* TableData.swift */,
 				3A3761702928F664007663ED /* TableModeling.swift */,
+				3A1AD7B829293F1D004F1C66 /* TicketData.swift */,
+				3A1AD7BA29293F28004F1C66 /* TicketModeling.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -64,6 +76,9 @@
 				3A596534292646F400901C8E /* SharingView.swift */,
 				3A5073662926D17000151323 /* MyTicketsView.swift */,
 				3A3761722928FA6D007663ED /* TableRowView.swift */,
+				3A1AD7B629293A28004F1C66 /* TicketItemView.swift */,
+				3A1AD7BC29294503004F1C66 /* SheetView.swift */,
+				3A1AD7C029295B28004F1C66 /* CodeGeneratorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,14 +189,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1AD7C129295B28004F1C66 /* CodeGeneratorView.swift in Sources */,
 				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
 				3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */,
 				3A1AD7B3292931A6004F1C66 /* ParkingView.swift in Sources */,
+				3A1AD7B929293F1D004F1C66 /* TicketData.swift in Sources */,
+				3A1AD7BD29294503004F1C66 /* SheetView.swift in Sources */,
 				3A37616F2928F652007663ED /* TableData.swift in Sources */,
+				3A1AD7B729293A28004F1C66 /* TicketItemView.swift in Sources */,
 				3A596535292646F400901C8E /* SharingView.swift in Sources */,
 				3A3761732928FA6D007663ED /* TableRowView.swift in Sources */,
 				3A5073672926D17000151323 /* MyTicketsView.swift in Sources */,
+				3A1AD7BB29293F28004F1C66 /* TicketModeling.swift in Sources */,
 				3A3761712928F664007663ED /* TableModeling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

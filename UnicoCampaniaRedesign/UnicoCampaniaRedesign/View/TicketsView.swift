@@ -20,13 +20,8 @@ struct TicketsView: View {
                 Text("Buy a Ticket")
                     .font(.title2)
                     .fontWeight(.bold)
-                    .padding(.top, 24)
+                    .padding(.top)
                     .padding(.leading, 28)
-//                VStack(alignment: .center) {
-//                    ForEach(tables) { table in
-//                        TableRowView(tableTitle: table.title, tableDescription: table.description, tableBackground: table.bgColor)
-//                            .padding(.bottom, 4)
-//                    }
                 List {
                     ForEach(tables) { table in
                         NavigationLink(destination: Text("")) {
@@ -50,7 +45,7 @@ struct TicketsView: View {
                 .scrollDisabled(true)
                 .scrollContentBackground(.hidden)
                 .padding(.top, -32)
-                .padding(.bottom, 32)
+                .padding(.bottom, 24)
             }
             .background(Color(.systemGray6), ignoresSafeAreaEdges: .all)
             .navigationTitle(tabName)

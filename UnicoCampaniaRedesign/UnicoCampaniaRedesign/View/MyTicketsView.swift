@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MyTicketsView: View {
+    
+    @State var showSheet : Bool = false
+    @State var tempType : String = ""
+    @State var tempRoute : String = ""
+    @State var tempValidity : String = ""
+    @State var tempStatus : Bool = false
+    
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -16,20 +23,26 @@ struct MyTicketsView: View {
                 .fontWeight(.bold)
                 .padding(.horizontal, 24)
                 .padding(.top)
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    Image("ticket1System")
-                        .resizable()
-                        .scaledToFit()
-                    Image("ticket2System")
-                        .resizable()
-                        .scaledToFit()
-                    Image("ticket3System")
-                        .resizable()
-                        .scaledToFit()
+                    ForEach(tickets) { item in
+                        TicketItemView(ticketType: item.type, ticketRoute: item.route, ticketValidity: item.validity, ticketStatus: item.status)
+                            .onTapGesture {
+                                showSheet.toggle()
+                                print(item.route)
+                                tempType = item.type
+                                tempRoute = item.route
+                                tempValidity = item.validity
+                                tempStatus = item.status
+                            }
+                            .padding(.horizontal, 4)
+                        .sheet(isPresented: $showSheet, content: {
+                            SheetView(ticketType: tempType, ticketRoute: tempRoute, ticketValidity: tempValidity, ticketStatus: tempStatus)
+                        })
+                    }
                 }
-                .frame(height: 180)
                 .padding(.leading, 10)
+                .padding(.bottom, 4)
             }
         }
     }
