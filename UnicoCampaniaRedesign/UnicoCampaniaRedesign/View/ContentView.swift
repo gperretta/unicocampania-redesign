@@ -9,25 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let tab1Name = "Tickets"
+    let tab2Name = "Parking"
+    let tab3Name = "Sharing"
+    let iconTab1 = "ticket"
+    let iconTab2 = "parkingsign.circle"
+    let iconTab3 = "scooter"
+    
     var body: some View {
         TabView {
             TicketsView().tabItem{
-                Image("ticket")
-                    .renderingMode(.template)
-                Text("Tickets")
+                Image(systemName: iconTab1)
+                Text(tab1Name)
             }
             ParkingView().tabItem{
-                Image("parking")
-                    .renderingMode(.template)
-                Text("Parking")
+                Image(systemName: iconTab2)
+                Text(tab2Name)
             }
             SharingView().tabItem{
-                Image("scooter")
-                    .renderingMode(.template)
-                Text("Sharing")
+                Image(systemName: iconTab3)
+                Text(tab3Name)
             }
         }
-        .accentColor(Color("brandBlue"))
+        .accentColor(.blue)
     }
 }
 

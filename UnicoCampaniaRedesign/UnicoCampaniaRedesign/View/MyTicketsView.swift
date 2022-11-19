@@ -19,18 +19,18 @@ struct MyTicketsView: View {
                 .padding(.top)
             ScrollView(.horizontal) {
                 HStack {
-                    Image("ticket1Test")
+                    Image("ticket1System")
                         .resizable()
                         .scaledToFit()
-                    Image("ticket2Test")
+                    Image("ticket2System")
                         .resizable()
                         .scaledToFit()
-                    Image("ticket3Test")
+                    Image("ticket3System")
                         .resizable()
                         .scaledToFit()
                 }
-                .frame(height: 180)
-                .padding(.leading)
+                .frame(height: 200)
+                .padding(.leading, 10)
             }
         }
     }

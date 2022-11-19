@@ -1,36 +1,36 @@
 //
-//  CardBuyTicketView.swift
+//  CardPricesView.swift
 //  UnicoCampaniaRedesign
 //
-//  Created by Gilda on 17/11/22.
+//  Created by Gilda on 19/11/22.
 //
 
 import SwiftUI
 
-struct CardBuyTicketView: View {
+struct CardPricesView: View {
     
-    let card1Icon = "cart"
+    let card2Icon = "magnifyingglass"
     
     var body: some View {
         
         ZStack(alignment: .leading) {
             if #available(iOS 16.0, *) {
-                Rectangle().fill(.green.gradient)
+                Rectangle().fill(.teal.gradient)
                     .cornerRadius(20)
             } else {
                 Rectangle()
-                    .foregroundColor(.green)
+                    .foregroundColor(.teal)
                     .cornerRadius(20)
             }
             VStack(alignment: .leading) {
                 HStack {
-                    Image(systemName: card1Icon)
+                    Image(systemName: card2Icon)
                         .padding(.trailing, 4)
-                    Text("Buy a Ticket")
+                    Text("Route and prices")
                         .font(.title2)
                         .fontWeight(.bold)
                 }
-                Text("Buy a new ticket from a company or based on your city.")
+                Text("Search for routes and prices to plan your trip based on your destination.")
                     .font(.body)
                     .opacity(0.9)
                     .padding(.top, 4)
@@ -41,8 +41,8 @@ struct CardBuyTicketView: View {
     }
 }
 
-struct CardBuyTicketView_Previews: PreviewProvider {
+struct CardPricesView_Previews: PreviewProvider {
     static var previews: some View {
-        CardBuyTicketView()
+        CardPricesView()
     }
 }

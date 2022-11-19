@@ -9,32 +9,35 @@ import SwiftUI
 
 struct TicketsView: View {
     
-    let tabName = "Tickets"
-    let iconName = "user"
+    let tab1Name = "Tickets"
+    let userIcon = "person.circle"
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack{
+            VStack(alignment: .leading) {
                     MyTicketsView()
-                        .padding(.bottom, 8)
+                        .padding(.vertical, 32)
                     VStack(alignment: .center) {
                         CardBuyTicketView()
-                        CreditCardView()
+                            .padding(.bottom, 4)
+                        CardPricesView()
+                            .padding(.bottom, 8)
                     }
                     .padding(.horizontal)
+                Spacer()
                 }
-            }
+            .background(Color(.systemGray6), ignoresSafeAreaEdges: .all)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text(tabName)
+                    Text(tab1Name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .padding(.top, 50)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Image(iconName)
-                        .resizable()
-                        .frame(width: 30, height: 30)
+                    Image(systemName: userIcon)
+                        .font(.title)
+                        .padding(.top, 50)
                 }
             }
         }

@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ParkingView: View {
     var body: some View {
-        Text("PARKING VIEW")
+        VStack {
+            Text("PARKING VIEW")
+        }
     }
 }
 

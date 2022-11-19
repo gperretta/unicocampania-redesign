@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SharingView: View {
     var body: some View {
-        Text("SHARING VIEW")
+        VStack {
+            Text("SHARING VIEW")
+        }
     }
 }
 
