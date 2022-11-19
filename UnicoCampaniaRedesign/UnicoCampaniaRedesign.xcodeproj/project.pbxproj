@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A37616B2928DC3E007663ED /* CardPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37616A2928DC3E007663ED /* CardPricesView.swift */; };
-		3A5073632926D0D800151323 /* CardBuyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073622926D0D800151323 /* CardBuyTicketView.swift */; };
+		3A1AD7B3292931A6004F1C66 /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD7B2292931A6004F1C66 /* ParkingView.swift */; };
+		3A37616F2928F652007663ED /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37616E2928F652007663ED /* TableData.swift */; };
+		3A3761712928F664007663ED /* TableModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3761702928F664007663ED /* TableModeling.swift */; };
+		3A3761732928FA6D007663ED /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3761722928FA6D007663ED /* TableRowView.swift */; };
 		3A5073672926D17000151323 /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073662926D17000151323 /* MyTicketsView.swift */; };
-		3A5073692926E0C400151323 /* CardCreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073682926E0C400151323 /* CardCreditView.swift */; };
 		3A59652F292646BB00901C8E /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59652E292646BB00901C8E /* TicketsView.swift */; };
-		3A596531292646C700901C8E /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596530292646C700901C8E /* ParkingView.swift */; };
 		3A596535292646F400901C8E /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596534292646F400901C8E /* SharingView.swift */; };
 		3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */; };
 		3AB97DEA292563C0008E815E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE9292563C0008E815E /* ContentView.swift */; };
@@ -21,12 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A37616A2928DC3E007663ED /* CardPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPricesView.swift; sourceTree = "<group>"; };
-		3A5073622926D0D800151323 /* CardBuyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBuyTicketView.swift; sourceTree = "<group>"; };
+		3A1AD7B2292931A6004F1C66 /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
+		3A37616E2928F652007663ED /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		3A3761702928F664007663ED /* TableModeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableModeling.swift; sourceTree = "<group>"; };
+		3A3761722928FA6D007663ED /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
 		3A5073662926D17000151323 /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
-		3A5073682926E0C400151323 /* CardCreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCreditView.swift; sourceTree = "<group>"; };
 		3A59652E292646BB00901C8E /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
-		3A596530292646C700901C8E /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
 		3A596534292646F400901C8E /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
 		3AB97DE4292563C0008E815E /* UnicoCampaniaRedesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicoCampaniaRedesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicoCampaniaRedesignApp.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		3A59652C2926469000901C8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A37616E2928F652007663ED /* TableData.swift */,
+				3A3761702928F664007663ED /* TableModeling.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -57,13 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				3AB97DE9292563C0008E815E /* ContentView.swift */,
+				3A1AD7B2292931A6004F1C66 /* ParkingView.swift */,
 				3A59652E292646BB00901C8E /* TicketsView.swift */,
-				3A596530292646C700901C8E /* ParkingView.swift */,
 				3A596534292646F400901C8E /* SharingView.swift */,
-				3A5073622926D0D800151323 /* CardBuyTicketView.swift */,
-				3A5073682926E0C400151323 /* CardCreditView.swift */,
 				3A5073662926D17000151323 /* MyTicketsView.swift */,
-				3A37616A2928DC3E007663ED /* CardPricesView.swift */,
+				3A3761722928FA6D007663ED /* TableRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,14 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
-				3A5073632926D0D800151323 /* CardBuyTicketView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
 				3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */,
+				3A1AD7B3292931A6004F1C66 /* ParkingView.swift in Sources */,
+				3A37616F2928F652007663ED /* TableData.swift in Sources */,
 				3A596535292646F400901C8E /* SharingView.swift in Sources */,
-				3A596531292646C700901C8E /* ParkingView.swift in Sources */,
-				3A37616B2928DC3E007663ED /* CardPricesView.swift in Sources */,
+				3A3761732928FA6D007663ED /* TableRowView.swift in Sources */,
 				3A5073672926D17000151323 /* MyTicketsView.swift in Sources */,
-				3A5073692926E0C400151323 /* CardCreditView.swift in Sources */,
+				3A3761712928F664007663ED /* TableModeling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
