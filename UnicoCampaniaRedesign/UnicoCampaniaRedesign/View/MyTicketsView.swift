@@ -28,7 +28,7 @@ struct MyTicketsView: View {
                         .resizable()
                         .scaledToFit()
                 }
-                .frame(height: 200)
+                .frame(height: 180)
                 .padding(.leading, 10)
             }
         }
