@@ -16,15 +16,14 @@ struct TicketsView: View {
         NavigationView {
             VStack(alignment: .leading) {
                     MyTicketsView()
-                        .padding(.vertical, 32)
+                        .padding(.top, 32)
                     VStack(alignment: .center) {
                         CardBuyTicketView()
-                            .padding(.bottom, 4)
                         CardPricesView()
-                            .padding(.bottom, 8)
+                        Spacer()
                     }
                     .padding(.horizontal)
-                Spacer()
+                    .padding(.vertical)
                 }
             .background(Color(.systemGray6), ignoresSafeAreaEdges: .all)
             .toolbar {

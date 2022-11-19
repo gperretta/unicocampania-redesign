@@ -14,7 +14,6 @@ struct MyTicketsView: View {
             Text("My tickets ")
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundColor(.black)
                 .padding(.horizontal, 24)
                 .padding(.top)
             ScrollView(.horizontal) {
