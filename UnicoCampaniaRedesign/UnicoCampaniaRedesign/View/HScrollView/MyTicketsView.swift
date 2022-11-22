@@ -10,10 +10,10 @@ import SwiftUI
 struct MyTicketsView: View {
     
     @State var showSheet : Bool = false
-    @State var tempType : String = ""
-    @State var tempRoute : String = ""
-    @State var tempValidity : String = ""
-    @State var tempStatus : Bool = false
+    @State var tempType : String = "INT. - CORSA SINGOLA"
+    @State var tempRoute : String = "Napoli - Ascea"
+    @State var tempValidity : String = "Nov 16, 2022 - 15:14"
+    @State var tempStatus : Bool = true
     
     var body: some View {
         
@@ -28,12 +28,13 @@ struct MyTicketsView: View {
                     ForEach(tickets) { item in
                         TicketItemView(ticketType: item.type, ticketRoute: item.route, ticketValidity: item.validity, ticketStatus: item.status)
                             .onTapGesture {
-                                showSheet.toggle()
                                 print(item.route)
                                 tempType = item.type
                                 tempRoute = item.route
                                 tempValidity = item.validity
                                 tempStatus = item.status
+                                
+                                showSheet.toggle()
                             }
                             .padding(.horizontal, 4)
                         .sheet(isPresented: $showSheet, content: {

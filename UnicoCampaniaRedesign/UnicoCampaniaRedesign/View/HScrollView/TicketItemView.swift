@@ -44,9 +44,9 @@ struct TicketItemView: View {
                 }
                 .padding(.horizontal)
             }
-            .padding(4)
+            .padding(8)
         }
-        .frame(width: 330, height: 180)
+        .frame(width: 330, height: 190)
         .background(.white)
         .cornerRadius(20.0)
         .shadow(color: .gray, radius: 2.0, x: -2, y: 2)

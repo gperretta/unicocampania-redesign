@@ -81,7 +81,7 @@ struct SheetView: View {
                 }
             }
             .padding()
-            .toolbar {
+            .toolbar(){
                 ToolbarItem {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()

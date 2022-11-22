@@ -10,13 +10,12 @@ import CoreImage.CIFilterBuiltins
 
 struct CodeGeneratorView: View {
     
-    @State private var emailAddress = "you@yoursite.com"
     @State private var randomSequence = "abcdEFGH12340000"
     let randomSequenceSize = 16
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
-    let maxCount = 9
-    @State var countdown = 9
+    let maxCount = 180
+    @State var countdown = 180
     @State var timerRunning = true
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -49,7 +48,7 @@ struct CodeGeneratorView: View {
                 })
             }
             .padding(.vertical, 4)
-            Image(uiImage: generateQRCode(from:"\(randomSequence))\n\(emailAddress)"))
+            Image(uiImage: generateQRCode(from:"\(randomSequence))\n\(userData.mail)"))
                 .interpolation(.none)
                 .resizable()
                 .scaledToFit()

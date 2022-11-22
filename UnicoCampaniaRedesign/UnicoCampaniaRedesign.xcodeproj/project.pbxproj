@@ -23,6 +23,7 @@
 		3AB97DEA292563C0008E815E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE9292563C0008E815E /* ContentView.swift */; };
 		3AB97DEC292563C1008E815E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB97DEB292563C1008E815E /* Assets.xcassets */; };
 		3AB97DEF292563C1008E815E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB97DEE292563C1008E815E /* Preview Assets.xcassets */; };
+		3AC05F6D292B755D00A4D9BC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC05F6C292B755D00A4D9BC /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		3AB97DE9292563C0008E815E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AB97DEB292563C1008E815E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AB97DEE292563C1008E815E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AC05F6C292B755D00A4D9BC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3A3761702928F664007663ED /* TableModeling.swift */,
 				3A1AD7B829293F1D004F1C66 /* TicketData.swift */,
 				3A1AD7BA29293F28004F1C66 /* TicketModeling.swift */,
+				3AC05F6C292B755D00A4D9BC /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -70,15 +73,12 @@
 		3A59652D2926469600901C8E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AC05F6E292B83C900A4D9BC /* Placeholders */,
 				3AB97DE9292563C0008E815E /* ContentView.swift */,
-				3A1AD7B2292931A6004F1C66 /* ParkingView.swift */,
 				3A59652E292646BB00901C8E /* TicketsView.swift */,
-				3A596534292646F400901C8E /* SharingView.swift */,
-				3A5073662926D17000151323 /* MyTicketsView.swift */,
-				3A3761722928FA6D007663ED /* TableRowView.swift */,
-				3A1AD7B629293A28004F1C66 /* TicketItemView.swift */,
-				3A1AD7BC29294503004F1C66 /* SheetView.swift */,
-				3A1AD7C029295B28004F1C66 /* CodeGeneratorView.swift */,
+				3AC05F70292B848F00A4D9BC /* ListSection */,
+				3AC05F6F292B845B00A4D9BC /* HScrollView */,
+				3AC05F71292B84C100A4D9BC /* Modal */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +117,41 @@
 				3AB97DEE292563C1008E815E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AC05F6E292B83C900A4D9BC /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				3A1AD7B2292931A6004F1C66 /* ParkingView.swift */,
+				3A596534292646F400901C8E /* SharingView.swift */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
+		3AC05F6F292B845B00A4D9BC /* HScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3A5073662926D17000151323 /* MyTicketsView.swift */,
+				3A1AD7B629293A28004F1C66 /* TicketItemView.swift */,
+			);
+			path = HScrollView;
+			sourceTree = "<group>";
+		};
+		3AC05F70292B848F00A4D9BC /* ListSection */ = {
+			isa = PBXGroup;
+			children = (
+				3A3761722928FA6D007663ED /* TableRowView.swift */,
+			);
+			path = ListSection;
+			sourceTree = "<group>";
+		};
+		3AC05F71292B84C100A4D9BC /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				3A1AD7BC29294503004F1C66 /* SheetView.swift */,
+				3A1AD7C029295B28004F1C66 /* CodeGeneratorView.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +227,7 @@
 				3A1AD7C129295B28004F1C66 /* CodeGeneratorView.swift in Sources */,
 				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
+				3AC05F6D292B755D00A4D9BC /* UserData.swift in Sources */,
 				3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */,
 				3A1AD7B3292931A6004F1C66 /* ParkingView.swift in Sources */,
 				3A1AD7B929293F1D004F1C66 /* TicketData.swift in Sources */,
@@ -337,8 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,8 +402,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
