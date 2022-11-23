@@ -17,6 +17,10 @@ struct TicketItemView: View {
     var body: some View {
 
         ZStack {
+            Image("ticketBg")
+                .resizable()
+                .scaledToFit()
+                .shadow(color: .gray, radius: 2.0, x: -2, y: 2)
             VStack(alignment: .leading) {
                 VStack(alignment: .center) {
                     Image("logoScreen")
@@ -40,17 +44,16 @@ struct TicketItemView: View {
                         .padding(.bottom, 1)
                     Text(ticketStatus ? "Active" : "Expired")
                         .font(.subheadline)
+                        .fontWeight(.bold)
                         .foregroundColor(Color(ticketStatus ? .green : .red))
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, 24)
             }
             .padding(8)
         }
         .frame(width: 330, height: 190)
-        .background(.white)
-        .cornerRadius(20.0)
-        .shadow(color: .gray, radius: 2.0, x: -2, y: 2)
-        
+//        .background(.white)
+//        .cornerRadius(20.0)
     }
 }
 

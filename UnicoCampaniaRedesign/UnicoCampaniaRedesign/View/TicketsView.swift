@@ -16,7 +16,7 @@ struct TicketsView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 MyTicketsView()
-                        .padding(.leading, 4)
+                    .padding(.leading, 4)
                 Text("Buy a Ticket")
                     .font(.title2)
                     .fontWeight(.bold)
