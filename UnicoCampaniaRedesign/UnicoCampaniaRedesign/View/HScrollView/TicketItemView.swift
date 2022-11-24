@@ -20,7 +20,7 @@ struct TicketItemView: View {
             Image("ticketBg")
                 .resizable()
                 .scaledToFit()
-                .shadow(color: .gray, radius: 2.0, x: -2, y: 2)
+                //.shadow(color: .gray, radius: 2.0, x: -2, y: 2)
             VStack(alignment: .leading) {
                 VStack(alignment: .center) {
                     Image("logoScreen")
@@ -28,6 +28,7 @@ struct TicketItemView: View {
                         .frame(width: 71, height: 30.4)
                     Divider()
                         .padding(4)
+                        .padding(.horizontal)
                 }
                 VStack(alignment: .leading) {
                     Text(ticketType)
@@ -47,7 +48,7 @@ struct TicketItemView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(ticketStatus ? .green : .red))
                 }
-                .padding(.horizontal, 24)
+                .padding(.horizontal, 32)
             }
             .padding(8)
         }

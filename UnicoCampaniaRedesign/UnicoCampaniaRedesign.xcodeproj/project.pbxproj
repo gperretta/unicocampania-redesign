@@ -19,6 +19,7 @@
 		3A5073672926D17000151323 /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5073662926D17000151323 /* MyTicketsView.swift */; };
 		3A59652F292646BB00901C8E /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59652E292646BB00901C8E /* TicketsView.swift */; };
 		3A596535292646F400901C8E /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A596534292646F400901C8E /* SharingView.swift */; };
+		3A793DE0292F7AB5006C9615 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A793DDF292F7AB5006C9615 /* ListView.swift */; };
 		3AB97DE8292563C0008E815E /* UnicoCampaniaRedesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */; };
 		3AB97DEA292563C0008E815E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB97DE9292563C0008E815E /* ContentView.swift */; };
 		3AB97DEC292563C1008E815E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB97DEB292563C1008E815E /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		3A5073662926D17000151323 /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
 		3A59652E292646BB00901C8E /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
 		3A596534292646F400901C8E /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
+		3A793DDF292F7AB5006C9615 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		3AB97DE4292563C0008E815E /* UnicoCampaniaRedesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicoCampaniaRedesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB97DE7292563C0008E815E /* UnicoCampaniaRedesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicoCampaniaRedesignApp.swift; sourceTree = "<group>"; };
 		3AB97DE9292563C0008E815E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3AC05F6E292B83C900A4D9BC /* Placeholders */,
 				3AB97DE9292563C0008E815E /* ContentView.swift */,
 				3A59652E292646BB00901C8E /* TicketsView.swift */,
+				3A793DDF292F7AB5006C9615 /* ListView.swift */,
 				3AC05F70292B848F00A4D9BC /* ListSection */,
 				3AC05F6F292B845B00A4D9BC /* HScrollView */,
 				3AC05F71292B84C100A4D9BC /* Modal */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A793DE0292F7AB5006C9615 /* ListView.swift in Sources */,
 				3A1AD7C129295B28004F1C66 /* CodeGeneratorView.swift in Sources */,
 				3A59652F292646BB00901C8E /* TicketsView.swift in Sources */,
 				3AB97DEA292563C0008E815E /* ContentView.swift in Sources */,
@@ -373,7 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,7 +406,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
