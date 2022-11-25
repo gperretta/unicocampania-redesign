@@ -25,11 +25,8 @@ struct ListView: View {
                             .padding(.top, 0.2)
                     }
                 }
-                //.listRowBackground(Color.green)
             }.frame(width: 390,height: 110)
                 .padding(.bottom,-30)
-            //.frame(width: 390,height: 110
-            //.scrollContentBackground(.hidden)
             List{
                 NavigationLink(destination: Text("")){
                     VStack(alignment: .leading) {
@@ -45,10 +42,8 @@ struct ListView: View {
                             .padding(.top, 0.2)
                     }
                 }
-                //.listRowBackground(Color.green)
             }.frame(width: 390,height: 110)
                 .padding(.bottom,-30)
-           // .scrollContentBackground(.hidden)
             List{
                 NavigationLink(destination: Text("")){
                     VStack(alignment: .leading) {
@@ -64,10 +59,7 @@ struct ListView: View {
                             .padding(.top, 0.2)
                     }
                 }
-                //.listRowBackground(Color.green)
             }
-        //.scrollContentBackground(.hidden)
-            
         }
         .scrollContentBackground(.hidden)
     }
