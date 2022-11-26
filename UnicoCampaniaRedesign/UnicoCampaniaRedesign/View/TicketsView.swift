@@ -15,9 +15,6 @@ struct TicketsView: View {
     
     var body: some View {
         
-        
-        
-        
         NavigationView {
             VStack(alignment: .leading) {
                 MyTicketsView()
@@ -27,30 +24,10 @@ struct TicketsView: View {
                     .fontWeight(.bold)
                     .padding(.top)
                     .padding(.leading, 28)
-                
-//                List {
-//                    ForEach(tables) { table in
-//                        NavigationLink(destination: Text("")) {
-//                            VStack(alignment: .leading) {
-//                                HStack {
-//                                    Image(systemName: table.iconName)
-//                                    Text(table.title)
-//                                        .font(.headline)
-//                                        .fontWeight(.bold)
-//                                }
-//                                Text(table.description)
-//                                    .font(.footnote)
-//                                    .opacity(0.8)
-//                                    .padding(.top, 0.2)
-//                            }
-//                            .padding(.vertical, 4)
-//                        }
-//                    }
-//                    .listRowSeparator(.automatic)
-//                }
-                ListView()
+                ListView(Tables: TablesModel())
                     .padding(.top,-32)
                     .scrollDisabled(true)
+                Spacer()
             }
             .background(Color(.systemGray6), ignoresSafeAreaEdges: .all)
             .navigationTitle(tabName)
