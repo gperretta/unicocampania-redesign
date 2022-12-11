@@ -11,3 +11,5 @@ Native components to explore in this challenge:
 Other functionalities:
 - QR code generator (from a combination of a random alphanumeric string and the user mail)
 - Use of timer 
+
+**This project was part of the learning process of ADA 22/23.**
