@@ -20,7 +20,6 @@ struct TicketItemView: View {
             Image("ticketBg")
                 .resizable()
                 .scaledToFit()
-                //.shadow(color: .gray, radius: 2.0, x: -2, y: 2)
             VStack(alignment: .leading) {
                 VStack(alignment: .center) {
                     Image("logoScreen")
