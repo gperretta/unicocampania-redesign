@@ -1,10 +1,10 @@
 <h1> Unico Campania App - A first approach to app redesign </h1>
 
-Redesign of the UnicoCampania app, where I've decided to design a clean and easy-to-use solution to give you access to your tickets in just one tap.
+Redesign of the UnicoCampania app, in which I've decided to design a clean and easy-to-use solution to give you access to your tickets in just one tap.
 
 <h2> Project goal </h2>
 
-This solo-project was practical exercise to dive deeper into the Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) and native components at the Apple Developer Academy, learner program 22/23.
+This solo-project was a practical exercise to dive deeper into the Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) and native components at the Apple Developer Academy, learner program 22/23.
 
 <h2> Technologies </h2>
 
